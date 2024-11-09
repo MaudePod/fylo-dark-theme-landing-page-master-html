@@ -1,0 +1,36 @@
+section[class="one"] {
+    display: grid;
+    place-items: center;
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+
+section[class="one"] nav {
+    display: grid;
+    align-items: center;
+    width: 90%;
+    grid-template-columns: 80fr 20fr;
+    text-wrap: nowrap;
+    color: var(--white);
+}
+section[class="one"] nav svg{
+width: fit-content;
+height: 25%;
+}
+menu[id="top-nav"] {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    column-gap: 10px;
+}
+
+menu[id="top-nav"] li {
+    cursor: pointer;
+    user-select: none;
+}
+
+@container main (inline-size < 800px) {
+    section[class="one"] nav {
+        grid-template-columns: 1fr 1fr;
+    }
+}

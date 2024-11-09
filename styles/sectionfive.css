@@ -1,0 +1,60 @@
+section[class="five"] {
+    display: grid;
+    width: 80cqw;
+    place-self: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    z-index: 1;
+    column-gap: 20px;
+    margin-bottom: 100px;
+    font-family: 'Open Sans';
+}
+
+section[class="five"]::before {
+    z-index: 0;
+    top: -20%;
+    left: -1%;
+    position: absolute;
+    content: url("../images/bg-quotes.png");
+}
+
+section[class="testimonial-card"] {
+    display: grid;
+    position: relative;
+    z-index: 1;
+    place-items: center;
+    row-gap: 10px;
+    padding: 5%;
+    background: var(--dark-blue-testimonials-background);
+}
+
+footer[class="testimonal-card-footer"] {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    place-items: center;
+    place-self: start;
+    column-gap: 10px;
+}
+
+section[class="avatar"] img {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+section[class="author-name"] {
+    font-weight: 700;
+}
+
+@container main (inline-size < 800px) {
+    section[class="five"] {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        margin-bottom: 100px;
+    }
+
+    section[class="five"]::before {
+        top: -8%;
+        left: 1%;
+    }
+}

@@ -1,0 +1,54 @@
+@import url("styles/sectionone.css") layer(one);
+@import url("styles/sectiontwo.css") layer(two);
+@import url("styles/sectionthree.css") layer(three);
+@import url("styles/sectionfour.css") layer(four);
+@import url("styles/sectionfive.css") layer(five);
+@import url("styles/sectionsix.css") layer(six);
+:root {
+    /*Primary*/
+    --dark-blue: hsl(217, 28%, 15%);
+    --dark-blue-main-background: hsl(218, 28%, 13%);
+    --dark-blue-footer-background: hsl(216, 53%, 9%);
+    --dark-blue-testimonials-background: hsl(219, 30%, 18%);
+    /*Accent*/
+    --cyan-inside-cta-gradient: hsl(176, 68%, 64%);
+    --blue-inside-cta-gradient: hsl(198, 60%, 50%);
+    --light-red-error: hsl(0, 100%, 63%);
+    /*Neutral*/
+    --white: hsl(0, 0%, 100%);
+    --font-size: 14px;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url(./fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(./fonts//Open_Sans//OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+body {
+    display: grid;
+    width: 100svw;
+    margin: 0;
+    container: body / inline-size;
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+
+main {
+    display: grid;
+    width: 100%;
+    background: linear-gradient(var(--dark-blue), var(--dark-blue-main-background) 35%);
+    container: main / inline-size;
+    color: white;
+    row-gap: 100px;
+}
+
+div[class="attribution"] {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}

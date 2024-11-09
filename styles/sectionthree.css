@@ -1,0 +1,27 @@
+section[class="three"] {
+    display: grid;
+    place-self: center;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+    width: 60cqw;
+    text-align: center;
+    font-family: 'Open Sans';
+}
+
+section [class="feature-card"] {
+    display: grid;
+    row-gap: 10px;
+}
+
+section[class="feature-card-header"] {
+    font-weight: 700;
+    font-family: 'Raleway';
+}
+
+@container main (inline-size < 800px) {
+    section[class="three"] {
+        grid-template-columns: 1fr;
+        row-gap: 100px;
+        width: 90cqw;
+    }
+}
