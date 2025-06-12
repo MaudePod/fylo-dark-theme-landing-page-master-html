@@ -13,10 +13,12 @@ section[class="one"] nav {
     text-wrap: nowrap;
     color: var(--white);
 }
-section[class="one"] nav svg{
-width: fit-content;
-height: 25%;
+
+section[class="one"] nav svg {
+    width: fit-content;
+    height: 25%;
 }
+
 menu[id="top-nav"] {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
