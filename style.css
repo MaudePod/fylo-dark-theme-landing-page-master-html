@@ -49,3 +49,6 @@ div[class="attribution"] {
     margin: 0 auto;
     color: white;
 }
+a,a:visited{
+    color: white;
+}
