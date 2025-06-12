@@ -51,4 +51,5 @@ div[class="attribution"] {
 }
 a,a:visited{
     color: white;
+    text-decoration: none;
 }
